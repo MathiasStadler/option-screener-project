@@ -1,0 +1,6 @@
+**/*/output
+output/*.csv
+output/*.html
+output/*.xlsx
+src/__pycache__/**/*
+
