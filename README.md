@@ -89,6 +89,33 @@ python -m src.main \
   --long-delta-max -0.02
 ```
 
+### 2.1 Custom Watchlist
+```bash
+python -m src.main \
+  --watchlist NVDA,TSLA,AAPL,MSFT,AMZN,GOOGL,META \
+  --min-volume 0 \
+  --max-dte 10 \
+  --min-pop 0.55 \
+  --short-delta-min -0.4 \
+  --short-delta-max -0.1 \
+  --long-delta-min -0.15 \
+  --long-delta-max -0.02
+```
+
+### 2.2 Custom Watchlist
+```bash
+python -m src.main \
+  --watchlist CSX,TREX,CROX,FTB,ELF \
+  --min-volume 0 \
+  --max-dte 55 \
+  --min-pop 0.55 \
+  --short-delta-min -0.4 \
+  --short-delta-max -0.1 \
+  --long-delta-min -0.15 \
+  --long-delta-max -0.02
+```
+
+
 ### 3. Use IBKR Scanner (Top Volume + Most Active)
 ```bash
 python -m src.main \
@@ -266,3 +293,6 @@ option-screener-project/
 ## License
 
 MIT — Use at your own risk. Not financial advice.
+
+python -m src.main   --watchlist CSX,TREX,CROX,FTB,ELF   --min-volume 0   --max-dte 55   --min-pop 0.55   --short-delta-min -0.4   --short-delta-max -0.1   --long-delta-min -0.15   --long-delta-max -0.02
+
